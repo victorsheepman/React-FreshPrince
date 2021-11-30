@@ -1,0 +1,17 @@
+
+@import './style/colors';
+@import './style/fonts';
+@import './style/mixins';
+@import './style/base'; 
+
+//components
+
+@import './components/Card/_card';
+@import './components/Button/button';
+@import './components/Header/header';
+@import './components/Sidebar/sidebar';
+@import './components/Galery/galery';
+
+
+//container
+@import './container/layout';

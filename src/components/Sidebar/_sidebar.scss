@@ -1,0 +1,121 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 752px;
+    width: porcentaje(424);
+    margin-left: porcentaje(56);
+    &__header{  
+        width: 100%;
+        height: 112px;
+        color: $color-black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__size{
+        width: 275px;
+        height: 104px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $color-black;
+        ul{                
+            width: 275px;
+            height: 64px;
+            display: flex;
+        }
+        li{
+            display: block;
+            width: 64px;
+            height: 64px;
+            list-style: none;
+        }
+
+    }
+    &__button{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__body{
+        width: 424px;
+        height: 224px;
+        color: $color-black;
+    }
+    @include small{    
+        width: 100%;
+        height: 872px;
+        margin-top: 16px;
+        h1,li,span{
+            color: $color-black;
+            text-align: center;
+        }
+        &__header{  
+            width: 312px;
+            height: 168px;
+        }
+        &__button{
+            width: 100%;
+            height: 120px;
+        }
+        &__size{
+                        
+            width: 312px;
+            height: 104px;
+            color: $color-black;
+            ul{                
+                width: 275px;
+                height: 64px;
+                display: flex;
+            }
+            li{
+                display: block;
+                width: 64px;
+                height: 64px;
+                list-style: none;
+            }
+
+        }
+        &__body{
+            
+            width: 312px;
+            height: 288px;
+            color: $color-black;
+        }
+    }
+    @include tablet{
+        width: 100%;
+        height: 872px;
+        align-items: center;
+        margin-top: 38%;
+        margin-left: 0px;
+        h1,li,span{
+            color: $color-black;
+            text-align: center;
+        }
+        &__header{  
+            width: 90%;
+            height: 168px;
+        }
+        &__button{
+            width: 90%;
+            height: 120px;
+        }
+        &__size{
+                        
+            width: 90%;
+            height: 104px;
+            padding-left: 15%;
+        }
+        &__body{
+            width: 90%;
+            height: 288px;
+        }
+
+    }
+}

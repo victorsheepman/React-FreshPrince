@@ -1,0 +1,37 @@
+@function porcentaje($width){
+    @return  $width * 100%/1366;
+};
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: $color-white;
+    font: $font-h1;
+}
+h1{
+    font: $font-h1;
+}
+h2{
+    font: $font-h2;
+}
+h3{
+    font: $font-h3;
+}
+figure{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }  
+}
+
+.body-1{
+    font: $font-body1;
+}
+.link{
+    font: $font-body1-underline;
+}
+  

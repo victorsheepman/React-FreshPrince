@@ -1,0 +1,26 @@
+.header{
+    width: 100%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &__nav{
+        width: 254px;
+        height: 32px;
+        display: flex;
+        justify-content: space-between;
+        span{
+            color: $color-black;
+        }
+    }
+    &__icons{     
+        width: 80px;
+        height: 28px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    @include small{
+        display: none;
+    }
+}

@@ -1,0 +1,19 @@
+.layout{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-left: porcentaje(83);
+    padding-top: 60px;
+    @include small{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+    }
+    @include tablet{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+    }
+}

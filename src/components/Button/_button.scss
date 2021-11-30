@@ -1,0 +1,20 @@
+.button{
+    width: 424px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 16px 10px 16px 10px;
+    border:none;
+    background-color: $color-black;
+    font: $font-button;
+    color: $color-white;
+    &--blue{
+        @extend .button;
+        background-color: $color-blue;
+    }
+    @include small{
+        width: 321px;
+        &--blue{
+            width: 321px;
+        }
+    }
+}
