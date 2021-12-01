@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from '../Button/Button'
+import { Modal } from '../Modal/Modal';
 
 export const Sidebar = () => {
+    const [show,  setShow] = useState(false);
     return (
         <div className='sidebar'>
             <div className='sidebar__header'>
                 <h1>Crown Sweatshirt</h1>
-                <span className='body-1'>$ 80.00</span>
+                <span>$ 80.00</span>
             </div>
             <div className='sidebar__size'>
                 <h3>Size</h3>
@@ -19,8 +21,8 @@ export const Sidebar = () => {
                 </ul>
             </div>
             <div className='sidebar__button'>
-                <Button type={'black'} title='ADD TO CART' />
-                <Button type={'blue'} title='BUY IT NOW' />
+                <Button type={'black'} title='ADD TO CART'  />
+                <Button type={'blue'} title='BUY IT NOW' setState={setShow}/>
             </div>
             <div className='sidebar__body'>
                 <p className='body-1'>
@@ -28,6 +30,7 @@ export const Sidebar = () => {
                 </p>
             </div>
             <a className='link' href="/#">Click for Sizing</a>
+            {show && <Modal  setState={setShow} />}
         </div>
     )
 }

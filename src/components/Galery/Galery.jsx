@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 
-export const Galery = ({img = ''}) => {
+export const Galery = () => {
     const [state, setState] = useState(7);
-    const images = [7,8,9,10];
-
     return (
         <div className='galery'>
-            <figure className='galery__image'>
+            <figure className='galery__image animate__animated animate__bounce animate__fadeIn'>
                 <img src={`assets/images/img-${state}.png`} alt="" />
             </figure>
             <div className='galery__nav'>

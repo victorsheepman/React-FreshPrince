@@ -14,7 +14,7 @@ export const Card = ({ title, price ,img1,img2, img3}) => {
 
            setImg(images[2]);
 
-       }, 800);
+       }, 1000);
     }
 
     const exitHover = ()=>{
