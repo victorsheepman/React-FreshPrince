@@ -1,0 +1,50 @@
+.menu{
+    display: none;
+    @include small{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 110px;
+        &__button{
+            width: 312px;
+            height: 56px;
+            background-color: $color-black;
+            border: none;
+            color: $color-blue;
+            font: $font-button;
+        }
+        &__nav{
+            position: fixed;
+            top: 0px;
+            z-index: 1;
+            width: 100%;
+            height: 280;
+            background-color: $color-black;
+            
+            ul{
+                width: 100%;
+                height: 100%;
+            }
+            &__item{
+                display: block;
+                width: 100%;
+                height: 56px;
+                list-style: none;
+                background-color: $color-black;
+                font: $font-button;
+                color: $color-white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &--blue{
+                    @extend .menu__nav__item;
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+
+   
+}

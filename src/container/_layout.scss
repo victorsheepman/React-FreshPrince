@@ -21,6 +21,7 @@
             letter-spacing: -0.02em;
             text-align: center;
             color: $color-black;
+            animation: open .8s forwards ease-in-out;
         }
         &__container{
             height: 611px;
@@ -79,5 +80,14 @@
         background-position: center;
         background-repeat: no-repeat;
         height: 250px; 
+    }
+}
+
+@keyframes open {
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(2%);
     }
 }
