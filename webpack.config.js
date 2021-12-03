@@ -4,11 +4,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+
+
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     publicPath: '/',
   },
   mode: 'development',
@@ -48,6 +50,9 @@ module.exports = {
       new CssMinimizerPlugin(),
       new TerserPlugin()
     ],
+    splitChunks: {
+      chunks: 'all',
+    },
 
   },
   plugins: [

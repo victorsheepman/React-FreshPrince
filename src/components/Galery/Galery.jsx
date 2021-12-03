@@ -5,7 +5,8 @@ export const Galery = () => {
     return (
         <div className='galery'>
             <figure className='galery__image animate__animated animate__bounce animate__fadeIn'>
-                <img src={`assets/images/img-${state}.png`} alt="" />
+                <img src={`assets/images/img-${state}.png`} sizes='sizes="(max-width: 320px) 320px,
+            (max-width: 480px) 480px,' alt="" />
             </figure>
             <div className='galery__nav'>
                 <button onClick={()=>setState(7)}></button>

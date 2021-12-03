@@ -32,5 +32,10 @@
             align-items: center;
         }
     }
+    @include small{
+        &__logo{
+            width: 169px;
+        }
+    }
 
 }

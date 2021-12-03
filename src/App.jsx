@@ -13,8 +13,7 @@ export const App = () => {
             <Header />
             <Layout />
             <Menu/>
-            <Footer />
-            
+            <Footer />        
         </>
     )
 }

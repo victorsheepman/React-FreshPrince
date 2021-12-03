@@ -3,6 +3,7 @@ import { Galery } from '../components/Galery/Galery'
 import { Sidebar } from '../components/Sidebar/Sidebar'
 import { Card } from '../components/Card/Card'
 import { useNearScreen } from '../hooks/useNearScreen'
+
 export const Layout = () => {
     const [show, element] = useNearScreen();
     return (<>

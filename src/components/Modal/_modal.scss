@@ -56,11 +56,33 @@
       }
     }
     @include small{
-      &__content{
-        padding-top: 10%;
-      }
+      min-width: 320px;
+      justify-content: center;
       button{
-        margin-left: 10%;
+        margin-left: 4%;
+      }
+      &__content{
+        width: 100%;
+        
+        padding-top: 11%;
+        padding-left: 5%;
+      }
+      &__detalle{
+        width: 51%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        span{
+          margin-top: 12px;
+        }
+      }
+      &__producto{
+        width: 100%;
+        height: 115px;
+        justify-content: flex-start;
+      }&__exit{
+        left: 84%;
+        top: -20px;
       }
     }
 }
@@ -85,6 +107,8 @@
         justify-content: center;
         border-bottom: 1px solid $color-black;
       }
+    }
+    @include small{
     }
   }
   
@@ -121,6 +145,24 @@
         color: $color-black;
 
       }
+    }
+    @include small{
+      margin-left: 5%;
+      &__precio{
+        margin-left: 35%;
+      }
+      &__parrafo{
+        width: 90%;
+        display: block;
+        font-size: 15px;
+
+       &--black{
+        display: block;
+        width: 90%;
+        font-size: 12px;
+      }
+      }
+     
     }
   }
   
