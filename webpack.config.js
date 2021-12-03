@@ -40,6 +40,13 @@ module.exports = {
       },
     ]
   },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new CssMinimizerPlugin(),
+      new TerserPlugin()
+    ]
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
