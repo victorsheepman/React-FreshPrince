@@ -51,6 +51,10 @@
         &__cards{
             height: 1441px;
         }
+        &__title{
+            
+            font-size: 3.6rem;
+        }
 
     }
     @include tablet{
@@ -88,6 +92,6 @@
         transform: translateX(-400px);
     }
     100%{
-        transform: translateX(2%);
+        transform: translateX(0px);
     }
 }

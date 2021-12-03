@@ -1,4 +1,5 @@
 import React from 'react'
+import { Footer } from './components/Footer/Footer'
 import { Galery } from './components/Galery/Galery'
 import { Header } from './components/Header/Header'
 import { Menu } from './components/Menu/Menu'
@@ -12,6 +13,7 @@ export const App = () => {
             <Header />
             <Layout />
             <Menu/>
+            <Footer />
             
         </>
     )
